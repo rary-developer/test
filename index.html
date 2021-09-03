@@ -1,11 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
 <body>
-<h1>Hello JS</h1>
+    <h1>Hello JS</h1>
+<h1>Hello World</h1>
+<h4>hi</h4>
+<button onclick="click();">버튼</button>
+<p id="disapear">버튼 클릭시 사라지게 만들어보자</p>
+
+
 <script>
-    console.log("Hello World !");
-    <h1>Hello World</h1>
-    <h4>hi</h4>
+    console.log("Hello World !"); 
+    const click=()=>{
+        $("#disapear").attr("display":"none");
+    } 
 </script>
-</body> 
+</body>
 </html>
